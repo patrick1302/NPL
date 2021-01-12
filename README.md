@@ -51,6 +51,10 @@ $ npm install
 ##Execute o projeto
 npm start
 
+## Usuário e senha
+usuário: teste
+senha: teste
+
 ```
 
 
