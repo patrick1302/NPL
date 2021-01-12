@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.login-button {
+    width: 100%;
+    background: #00a759;
+    color: #fff;
+    transition: ease .4s;
+    border: none;
+    cursor: pointer;
+    line-height: 2rem;
+}
+
+.login-button:hover {
+    opacity: .7;
+}

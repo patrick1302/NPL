@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 
 import api from '../../services/api'
+import Swal from 'sweetalert2'
+
+import './style.css'
 
 const Login = () => {
     const [loginInfos, setLoginInfos] = useState({"user": "", "password": ""})
@@ -15,17 +18,20 @@ const Login = () => {
           history.push('/home')
         }catch(e){
           console.log(e)
+          Swal.fire({
+            text: "Usuário  ou senha incorreta",
+            icon: "warning",
+          });
         }
       }
 
       const handleChange = e => {
           setLoginInfos({...loginInfos, [e.target.name]: e.target.value})
       }
-      console.log(loginInfos)
 
       return (
-        <div className="App">
-          <form>
+        <div className="main">
+          <form className="form-container">
             <div className="form-group">
               <label htmlFor="user">Usuário</label>
               <input id="user" name="user" value={loginInfos.user} className="form-control" onChange={handleChange} type='text' placeholder="Digite seu usuário"/>
