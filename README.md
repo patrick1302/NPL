@@ -24,7 +24,7 @@ Não colocar os scripts direito na página do HTML e sim colocá-los em arquivos
 Para previnir de ataques XSS é bom usar bibliotecas anti-xss, fazer a validação de input que consiste em garantir que a aplicação está renderizando os dados corretamente e assim previnindo de dados maliciosos, utilizar o Content	Secury Policy que é um cabeçalho HTTP que fornece uma lista de recursos confiáveis no qual o navegador pode confiar.
 
 O que é e em qual momento devemos utilizar o Gulp.js?
-Gulp é um task runner, ou seja, ele automatiza tarefas repetivas como minificação e contatenação de arquivos, otimização de imagens, entre outras tarefas. Deve-se utilizar o Gulp conforme o projeto cresce e começa a ter perda de performance.
+Gulp é um task runner, ou seja, ele automatiza tarefas repetivas como minificação e contatenação de arquivos, otimização de imagens, entre outras tarefas. Deve-se utilizar o Gulp quando se busca uma melhor performance.
 
 
 Construa um exemplo de sessão logada (tela de login e autenticação de usuário gravando a sessão)
@@ -38,8 +38,6 @@ $ cd npl/auth-login/api
 
 ## Instale as dependências
 $ npm install
-
-## Execute o mongodb
 
 ## Execute o server
 node src/index.js
