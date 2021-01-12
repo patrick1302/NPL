@@ -1,5 +1,5 @@
 const express = require("express");
-// require("./db/moongose.js");
+require("./db/mongoose");
 const routes = require("./routes");
 const cors = require("cors");
 

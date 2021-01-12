@@ -1,4 +1,4 @@
-require("../db/moongose");
+require("../db/mongoose");
 const Customer = require("../model/Customer");
 
 module.exports = {

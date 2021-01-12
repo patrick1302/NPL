@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    position: absolute;
+    top: 15vh;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+form {
+    width: 400px;
+}
+.register-button {
+    width: 100%;
+    border: none;
+    line-height: 2.5rem;
+    cursor: pointer;
+    background: #00a759;
+    color: #fff;
+    transition: ease .4s;
+}
+.register-button:hover {
+    opacity: .7;
+
+}

@@ -15,7 +15,7 @@ const customerSchema = new Schema(
       lowercase: true,
       trim: true
     },
-    cpnCnpj: {
+    cpfCnpj: {
       type: String,
       trim: true,
       required: true,
